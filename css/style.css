@@ -1,0 +1,1038 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul, ol{
+    list-style: none;
+}
+a, a:hover, a:focus{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+.title{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 55px;
+}
+.title h2{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 32px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #c83757;
+}
+body{
+    overflow-x: hidden !important;
+}
+/* nav bar part css start */
+nav{
+    position: absolute !important;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    background: transparent;
+}
+.navbar{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+.navbar-expand-lg .navbar-nav{
+    align-items: center;
+}
+nav ul li a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    transition: .4s;
+    padding: 0 !important;
+    margin-right: 40px;
+    position: relative;
+}
+nav ul li a:hover{
+    color: #c83757;
+}
+nav ul li a::after{
+    width: 0%;
+    height: 2px;
+    background: #c83757;
+    position: absolute;
+    top: -25px;
+    left: 0;
+    transition: .4s;
+    content: "";
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+nav ul li .active{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #c83757;
+    text-transform: uppercase;
+    transition: .4s;
+    margin-right: 40px;
+    position: relative;
+}
+nav ul li .active::after{
+    width: 100%;
+    height: 2px;
+    background: #c83757;
+    position: absolute;
+    top: -23px;
+    left: 0;
+    transition: .4s;
+    content: "";
+}
+nav .signup{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+    background: #c83757;
+    border-radius: 20px;
+    padding: 10px;
+    color: #fff;
+    border: 0;
+}
+/* banner part css start */
+#banner-part{
+    background: url(../images/banner.png) no-repeat center;
+    background-size: cover;
+    padding-top: 220px;
+    padding-bottom: 120px;
+    color: #fff;
+    position: relative;
+}
+#banner-part h1{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 50px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+#banner-part h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    position: relative;
+    margin-bottom: 20px;
+}
+#banner-part h3::after{
+    width: 60px;
+    height: 2px;
+    background: #c83757;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    content: "";
+}
+#banner-part .play{
+    margin-top: 40px;
+}
+#banner-part .play h5{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 50px;
+    cursor: pointer;
+    position: relative;
+}
+#banner-part .play i{
+    display: inline-block;
+    font-size: 40px;
+    position: absolute;
+    left: 0;
+    top: -10px;
+    cursor: pointer;
+}
+#banner-part h4{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 100px;
+}
+#banner-part h4::after{
+    width: 2px;
+    height: 70px;
+    background: #424247;
+    transform: translateY(-50%);
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    content: "";
+}
+#banner-part .get-app{
+    position: relative;
+    margin-top: 40px;
+}
+#banner-part .get-app i{
+    font-size: 40px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    border-radius: 50%;
+    background: #c83757;
+    color: #fff;
+    transform: translate(-50%, -50%);
+}
+#banner-part .get-app .app-store{
+    position: absolute;
+    top: 14px;
+    left: 160px;
+}
+#banner-part .get-app .android{
+    position: absolute;
+    top: 14px;
+    left: 340px;
+}
+#banner-part .get-app p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+#banner-part .get-app .ios{
+    position: absolute;
+    left: 150px;
+    bottom: -60px;
+}
+#banner-part .get-app .robot{
+    position: absolute;
+    left: 310px;
+    bottom: -60px;
+}
+/* about part css start */
+#about-part{
+    padding: 80px 0;
+}
+#about-part .title{
+    margin-top: 0;
+    text-align: left;
+}
+#about-part .image img{
+    width: 100%;
+    height: 100%;
+}
+#about-part p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+#about-part .watch{
+    position: relative;
+    margin: 20px 0;
+}
+#about-part i{
+    font-size: 40px;
+    color: #c83757;
+    position: absolute;
+    transform: translateY(-20%);
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+#about-part .watch p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #444;
+    margin-left: 45px;
+    cursor: pointer;
+}
+/* unique design css start */
+#unique-design{
+    background: #f1f1f1;
+    padding: 40px 0;
+}
+#unique-design .unique-item{
+    text-align: center;
+    background: #fff;
+    padding: 30px;
+    border-top: 5px solid red;
+    -webkit-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.75);
+}
+#unique-design .icon{
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.75);
+}
+#unique-design h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+#unique-design p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #444444;
+    margin: 30px 0;
+}
+/* applio work part css start */
+#applio-work-part{
+    padding: 50px 0;
+}
+#applio-work-part .title{
+    margin-top: 0;
+    text-align: left;
+    margin-bottom: 42px;
+}
+#applio-work-part .applio-work{
+    position: relative;
+}
+#applio-work-part .applio-work .image{
+    position: absolute;
+    top: 110px;
+    left: -120px;
+    z-index: -1;
+}
+#applio-work-part .work-item{
+    display: flex;
+    margin-bottom: 62px;
+}
+#applio-work-part .merge{
+    margin-bottom: 0;
+}
+#applio-work-part .work-item .image{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.75);
+}
+#applio-work-part .work-item .text{
+    width: 70%;
+    margin-left: 20px;
+}
+#applio-work-part .work-item .text h4{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #444444;
+    margin-bottom: 20px;
+}
+#applio-work-part .work-item .text p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #444444;
+    margin: 10px 0;
+}
+#applio-work-part .right-image img{
+    width: 100%;
+    height: 100%;
+}
+/* apps part css start */
+#apps-part{
+    margin: 30px 0;
+}
+#apps-part .title{
+    margin-top: 0;
+}
+#apps-part .apps{
+    padding: 20px;
+    background: #f1f1f1;
+    position: relative;
+}
+#apps-part .apps .image img{
+    width: 100%;
+    height: 100%;
+}
+#apps-part .apps h4{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+#apps-part .apps h5{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+#apps-part .apps .icon{
+    display: flex;
+}
+#apps-part .apps .icon i{
+    font-size: 16px;
+    display: inline-block;
+}
+#apps-part .apps .icon .free{
+    margin-left: auto;
+}
+#apps-part .apps .icon .free h6{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #689f38;
+    text-transform: capitalize;
+}
+#apps-part .apps .apps-out-left{
+    padding: 20px;
+    background: #f1f1f1;
+    position: absolute;
+    top: 0;
+    left: -330px;
+}
+#apps-part .apps-out-left .image{
+    width: 265px;
+    height: 265px;
+}
+#apps-part .apps-out-left .image img{
+    width: 100%;
+    height: 100%;
+}
+#apps-part .apps .apps-out-right{
+    padding: 20px;
+    background: #f1f1f1;
+    position: absolute;
+    top: 0;
+    right: -330px;
+}
+#apps-part .apps-out-right .image{
+    width: 265px;
+    height: 265px;
+}
+#apps-part .apps-out-right .image img{
+    width: 100%;
+    height: 100%;
+}
+/* screenshots part css start */
+#screenshots .title{
+    margin-bottom: -50px;
+}
+#screenshots .container3 ul{
+    top: 100px !important;
+}
+#screenshots .container3 ul i{
+    font-size: 30px;
+}
+#screenshots .container3 ul .left{
+    left: -70px !important;
+}
+#screenshots .container3 ul .right{
+    right: -70px !important;
+}
+/* team part css start */
+#team-part{
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+#team-part .team{
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+}
+#team-part .team .bamdik{
+    width: 20%;
+    margin: 0 10px;
+    display: flex;
+}
+#team-part .team .bamdik .image{
+    width: 100%;
+    height: 200px;
+    background: yellow;
+    position: relative;
+}
+#team-part .team .bamdik .image .img{
+    width: 100%;
+    height: 100%;
+}
+#team-part .team .bamdik .image img{
+    width: 100%;
+    height: 100%;
+}
+#team-part .team .bamdik .text{
+    width: 0%;
+    height: 200px;
+    background: #f1f1f1;
+    display: none;
+    padding: 10px 20px;
+}
+#team-part .team .bamdik .text h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+#team-part .team .bamdik .text h4{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+#team-part .team .bamdik .text p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-top: 20px;
+    line-height: 24px;
+}
+#team-part .team .bamdik .text .icon-div{
+    margin-top: 13px;
+}
+#team-part .team .bamdik .text .icon-div i{
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    background: #f1f1f1;
+    transition: .4s;
+    margin: 0 10px;
+}
+#team-part .team .bamdik .text .icon-div i:hover{
+    background: #fc3b64;
+    color: #fff;
+}
+#team-part .team .bamdik .image i{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    background: crimson;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+    z-index: 341;
+}
+#team-part .team .middle{
+    width: 50%;
+    margin: 0 10px;
+    display: flex;
+}
+#team-part .team .middle .image{
+    width: 40%;
+    height: 200px;
+    background: yellow;
+    position: relative;
+}
+#team-part .team .middle .image .img{
+    width: 100%;
+    height: 100%;
+}
+#team-part .team .middle .image img{
+    width: 100%;
+    height: 100%;
+}
+#team-part .team .middle .text{
+    width: 60%;
+    height: 200px;
+    background: #f1f1f1;
+    padding: 10px 20px;
+}
+#team-part .team .middle .text h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+#team-part .team .middle .text h4{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+#team-part .team .middle .text p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-top: 20px;
+    line-height: 24px;
+}
+#team-part .team .middle .text .icon-div{
+    margin-top: 13px;
+}
+#team-part .team .middle .text .icon-div i{
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    background: #f1f1f1;
+    transition: .4s;
+    margin: 0 10px;
+}
+#team-part .team .middle .text .icon-div i:hover{
+    background: #fc3b64;
+    color: #fff;
+}
+#team-part .team .middle .image i{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    background: crimson;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+    z-index: 341;
+}
+#team-part .team .dandik{
+    width: 20%;
+    margin: 0 10px;
+    display: flex;
+}
+#team-part .team .dandik .image{
+    width: 100%;
+    height: 200px;
+    background: yellow;
+    position: relative;
+}
+#team-part .team .dandik .image .img{
+    width: 100%;
+    height: 100%;
+}
+#team-part .team .dandik .image img{
+    width: 100%;
+    height: 100%;
+}
+#team-part .team .dandik .text{
+    width: 0%;
+    height: 200px;
+    background: #f1f1f1;
+    padding: 10px 20px;
+    display: none;
+}
+#team-part .team .dandik .text h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+#team-part .team .dandik .text h4{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+#team-part .team .dandik .text p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-top: 20px;
+    line-height: 24px;
+}
+#team-part .team .dandik .text .icon-div{
+    margin-top: 13px;
+}
+#team-part .team .dandik .text .icon-div i{
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    background: #f1f1f1;
+    transition: .4s;
+    margin: 0 10px;
+}
+#team-part .team .dandik .text .icon-div i:hover{
+    background: #fc3b64;
+    color: #fff;
+}
+#team-part .team .dandik .image i{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    background: crimson;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+    z-index: 341;
+}
+.bam-width{
+    width: 50% !important;
+}
+.bam-image-width{
+    width: 40% !important;
+}
+.bam-text-width{
+    width: 60% !important;
+}
+.image-width{
+    width: 100% !important;
+}
+.mid-width{
+    width: 20% !important;
+}
+/* card-part css start */
+#card-part{
+    padding: 40px;
+    background: #f1f1f1;
+    margin: 30px 0;
+}
+#card-part .member{
+    margin: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.5);
+-moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.5);
+box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.5);
+}
+#card-part .text-info{
+    background: #f1f1f1;
+    padding: 10px 20px 60px 20px;
+    color: #000 !important;
+}
+#card-part .text-info p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+#card-part .member-info{
+    text-align: center;
+    background: #fc3b64;
+    position: relative;
+    padding-bottom: 40px;
+}
+#card-part .member-info .image{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#card-part .member-info h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 60px;
+    text-transform: capitalize;
+}
+#card-part .member-info h5{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+#card-part .slick-dots{
+    position: absolute;
+    bottom: -20;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+}
+#card-part .slick-dots li{
+    display: inline-block;
+    margin: 0 10px;
+}
+#card-part .slick-dots li button{
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid red;
+}
+#card-part .slick-dots .slick-active button{
+    background: red;
+    border-color: red;
+}
+/* pricing part css start */
+#pricing-part{
+    margin: 60px 0;
+}
+#pricing-part .pricing-flex{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+#pricing-part .pricing{
+    width: 32%;
+    transition: .4s;
+}
+#pricing-part .pricing .basic{
+    text-align: center;
+    background: #dddddd;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#pricing-part .pricing .basic .h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+#pricing-part .pricing .details{
+    text-align: center;
+    background: #f1f1f1;
+}
+#pricing-part .pricing .details i{
+    font-size: 30px;
+    margin: 30px auto;
+}
+#pricing-part .pricing .details h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+#pricing-part .pricing .details ul{
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+#pricing-part .pricing .details ul li{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+}
+#pricing-part .pricing .purchase{
+    text-align: center;
+    background: #dddddd;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#pricing-part .pricing .basic .h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+#pricing-part .price-middle .basic{
+    background: #fc3b64;
+}
+#pricing-part .price-middle .details i{
+    margin-top: 60px;
+}
+#pricing-part .price-middle .details ul .merge{
+    padding-bottom: 60px;
+}
+#pricing-part .price-middle .purchase{
+    background: #fc3b64;
+}
+#pricing-part .pricing:hover{
+    scale: 1.1;
+}
+#pricing-part .pricing:hover .basic{
+    background: #fc3b64;
+}
+#pricing-part .pricing:hover .purchase{
+    background: #fc3b64;
+}
+/* contact part css start */
+#contact-part{
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+#contact-part form input{
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+#contact-part form .no-outline:focus{
+    outline: none;
+}
+#contact-part form input::placeholder{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+#contact-part form textarea{
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+    border: none;
+    border-bottom: 1px solid #000;
+    resize: none;
+}
+#contact-part form textarea::placeholder{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+#contact-part .submit{
+    text-align: center;
+}
+#contact-part button{
+    margin: 20px 0;
+    background: #fc3b64;
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #fff;
+}
+/* newslatter part css start */
+#newslatter-part{
+    transform: translateY(50%);
+}
+#newslatter-part .news-flex{
+    display: flex;
+    justify-content: center;
+    background: #fc3b64;
+    padding: 30px 0;
+}
+#newslatter-part .news-flex .newslatter{
+    width: 30%;
+    margin: 0 10px;
+    position: relative;
+}
+#newslatter-part .news-flex .newslatter i{
+    font-size: 45px;
+    color: #fff;
+}
+#newslatter-part .news-flex .newslatter .text{
+    position: absolute;
+    top: 0;
+    left: 45px;
+}
+#newslatter-part .news-flex .newslatter h1{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 42px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: -11px;
+}
+#newslatter-part .news-flex .newslatter h5{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    margin-top: -10px;
+}
+#newslatter-part .news-flex .form{
+    width: 30%;
+    margin: 0 10px;
+    position: relative;
+}
+#newslatter-part .news-flex .form input{
+    width: 100%;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 10px;
+    background: transparent;
+}
+#newslatter-part .news-flex .form .no-outline:focus{
+    outline: none;
+}
+#newslatter-part .news-flex .form input::placeholder{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+#newslatter-part .news-flex .form .submit{
+    position: absolute;
+    top: 50%;
+    right: 1px;
+    transform: translateY(-50%);
+}
+#newslatter-part .news-flex .form .submit button{
+    background: #fff;
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #fc3b64;
+}
+/* footer part css start */
+#footer-part{
+    background: #2c2e32;
+    padding-top: 130px;
+    padding-bottom: 60px;
+}
+#footer-part .image{
+    text-align: center;
+    padding-bottom: 60px;
+}
+#footer-part .icon{
+    text-align: center;
+}
+#footer-part .icon i{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: #000;
+    background: #fff;
+    transition: .4s;
+    position: relative;
+    margin: 0 20px;
+}
+#footer-part .icon i:hover{
+    color: #fff;
+    background: #fc3b64;
+}
+#footer-part .icon i p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+/* footer end part css start */
+#footer-end{
+    text-align: center;
+    background: #2c2e32;
+    margin-bottom: -20px;
+    border-top: 1px solid #444444;
+}
+#footer-end .end p{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    padding: 10px 0;
+}
+#footer-end .end p span{
+    color: #fc3b64;
+}
